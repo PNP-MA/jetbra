@@ -208,7 +208,7 @@ async function addButton() {
     newElement.addEventListener('click', async (e) => {
         let productCode = pluginDetail?.purchaseInfo?.productCode;
         if (productCode === undefined) {
-            window.alert('该插件不是市场付费插件！');
+            window.alert('This plug-in is not a paid plug-in in the market！');
             return;
         }
         let licenseId = genLicenseId()
